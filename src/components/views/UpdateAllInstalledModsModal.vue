@@ -57,7 +57,7 @@ export default class UpdateAllInstalledModsModal extends mixins(DownloadMixin)  
             try {
                 if (status === StatusEnum.FAILURE) {
                     this.setIsModProgressModalOpen(false);
-                    this.$store.commit('download/updateDownload', {downloadId, status: DownloadStatusEnum.FAILED});
+                    this.$store.commit('download/setFailed', downloadId);
                     if (err !== null) {
                         DownloadUtils.addSolutionsToError(err);
                         throw err;
