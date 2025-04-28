@@ -8,8 +8,8 @@ import StubInteractionProvider from './stubs/providers/stub.InteractionProvider'
 import InteractionProvider from '../../../src/providers/ror2/system/InteractionProvider';
 import StubLinkProvider from './stubs/providers/stub.LinkProvider';
 import LinkProvider from '../../../src/providers/components/LinkProvider';
-import StubProfileProvider from 'app/test/jest/__tests__/stubs/providers/stub.ProfileProvider';
-import ProfileProvider from 'src/providers/ror2/model_implementation/ProfileProvider';
+import StubProfileProvider from './stubs/providers/stub.ProfileProvider';
+import ProfileProvider from '../../../src/providers/ror2/model_implementation/ProfileProvider';
 
 export default class TestSetup {
 
